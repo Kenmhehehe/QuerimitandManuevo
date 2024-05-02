@@ -1,0 +1,186 @@
+body{
+    background-image: url("../images/bg3.jpg");
+    background-size: cover;
+}
+body::after {
+    content: ""; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover; 
+    filter: blur(5px); 
+    z-index: -1; 
+}
+.html {
+    scroll-behavior: smooth;
+}
+div.wrapper{
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* CSS Variable */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+div.navbar {
+    top: 0;
+    left: 0;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navbar logo and Image */
+.mainlogo {
+    height: 60px;
+    width: 60px;
+    margin: 7px 13px;
+    border-radius: 100%;
+}
+
+/* Navbar Styling */
+.navbar ul{
+    margin: 0;
+    padding: 10px 0;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 10px;  
+}
+
+.navbar a:hover {
+    color: black;
+    background-color: goldenrod;
+}
+.navbar ul li a.active{
+    color: orangered;
+}
+
+
+/* Home section */
+
+.home {
+    display: flex;
+    height: 590px;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 0 80px 0; */
+}
+
+.home {
+    background: url("../images/bg2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.home h1 {
+    font-family: 'Merriweather', serif;
+    color: orangered;
+    text-align: center;
+}
+.home p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-indent: 50px;
+    margin-top: 1.5px; 
+    margin-bottom: 1.5px
+}
+
+/* utility Class */
+.h-primary {
+    font-family: 'Merriweather', serif;
+    font-size: 2.8rem;
+    padding: 30px 4px 10px 20px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.footer{
+    clear: both;
+    border-top: 1px solid black;
+    padding: 10px;
+    text-align: center;
+     position: relative;
+    z-index: 1;
+}
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+.contact-box form{
+    width: 90%;
+    
+}
+.contact-box label{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.abouts h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.abouts p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
